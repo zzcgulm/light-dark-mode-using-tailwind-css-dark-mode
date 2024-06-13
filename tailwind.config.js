@@ -4,6 +4,7 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
+  darkMode: "selector",
   theme: {
     colors: {
       bigStone: "#123",

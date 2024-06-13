@@ -3,7 +3,7 @@
 A demo of using the Tailwind CSS Dark mode 'selector' strategy to both:
 
 - respect/honour users' settings
-- and functionality for a user to toggle mode
+- and give functionality for a user to toggle mode (and override their devoce/browser settings)
 
 ## References
 

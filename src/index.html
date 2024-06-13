@@ -2,72 +2,75 @@
 <html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Light/dark mode using light-dark() respecting users' settings</title>
-  <link href="./output.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light/dark mode using light-dark() respecting users' settings</title>
+    <link href="./output.css" rel="stylesheet" />
 </head>
 <!-- Add background colour to `<body>` so that `<footer>` background colour extends to bottom of viewport when page content is shorter than the viewport. -->
 
 <body class="m-[unset] text-white bg-mineShaft">
-  <header
-    class="px-[32px] py-4 text-base font-bold text-doveGrey bg-white border-b-silver border-solid border-t-0 border-x-0 border-b dark:text-white dark:bg-black dark:border-b-doveGrey">
-    Header
-  </header>
-  <!-- If we add the primary background colour to `<main>` then we can handle non-collapsing whitespace better? -->
-  <main class="text-mineShaft bg-white dark:text-white dark:bg-black">
-    <div class="px-[32px] py-4 text-mineShaft bg-white dark:text-white dark:bg-black">
-      <h1 class="my-[unset] text-3xl">Light/dark mode using Tailwind CSS <em>Dark mode</em> 'selector' strategy to dynamically toggle
-        respecting users' settings</h1>
-    </div>
-    <div class="px-[32px] py-4 text-mineShaft bg-white dark:text-white dark:bg-black">
-      <h2 class="my-[unset] text-2xl">Content block primary background</h2>
-    </div>
-    <div class="px-[32px] py-4 text-mineShaft bg-white dark:text-white dark:bg-black">
-      <p class="mb-4 text-base">
-        Second Content block primary background, illustrating what happens
-        when whitespace does not collapse on adjacent components with the same
-        background colour, ie the whitespace is larger then it should be.
-      </p>
-      <p class="my-4 text-base">
-        Second paragraph in second Content block primary background,
-        illustrating what happens when margins collapse in the same component.
-      </p>
-      <p class="mt-4 text-base">
-        Third paragraph in second Content block primary background,
-        illustrating what happens when margins collapse in the same component.
-      </p>
-    </div>
-    <div class="px-[32px] py-4 text-mineShaft bg-concrete dark:text-white dark:bg-mineShaft">
-      <h2 class="my-[unset] text-2xl">Content block secondary background</h2>
-    </div>
-    <div class="px-[32px] py-4 text-mineShaft bg-beige dark:text-white dark:bg-brownDerby">
-      <div>
-        <h2 class="my-[unset] text-2xl">
-          Boxed content <em>Beige</em> background (changes to <em>Big stone</em> in dark mode)
-        </h2>
-      </div>
-    </div>
-    <div class="px-[32px] py-4 text-white bg-chathamsBlue">
-      <div>
-        <h2 class="my-[unset] text-2xl">
-          Boxed content <em>Chathams Blue</em> background (same in light and
-          dark mode)
-        </h2>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="px-[32px] py-4 text-white bg-emperor">
-      <p class="my-[unset] text-base">Footer 1</p>
-    </div>
-    <div class="px-[32px] py-4 text-white bg-tundora">
-      <p class="my-[unset] text-base">Footer 2</p>
-    </div>
-    <div class="px-[32px] py-4 text-white bg-mineShaft">
-      <p class="my-[unset] text-base">Footer 3</p>
-    </div>
-  </footer>
+    <header
+        class="px-[32px] py-4 text-base font-bold text-doveGrey bg-white border-b-silver border-solid border-t-0 border-x-0 border-b dark:text-white dark:bg-black dark:border-b-doveGrey">
+        Header
+    </header>
+    <!-- If we add the primary background colour to `<main>` then we can handle non-collapsing whitespace better? -->
+    <main class="text-mineShaft bg-white dark:text-white dark:bg-black">
+        <div class="px-[32px] py-4 text-mineShaft bg-white dark:text-white dark:bg-black">
+            <h1 class="my-[unset] text-3xl">
+                Light/dark mode using Tailwind CSS <em>Dark mode</em> 'selector'
+                strategy to dynamically toggle
+            </h1>
+        </div>
+        <div class="px-[32px] py-4 text-mineShaft bg-white dark:text-white dark:bg-black">
+            <h2 class="my-[unset] text-2xl">Content block primary background</h2>
+        </div>
+        <div class="px-[32px] py-4 text-mineShaft bg-white dark:text-white dark:bg-black">
+            <p class="mb-4 text-base">
+                Second Content block primary background, illustrating what happens
+                when whitespace does not collapse on adjacent components with the same
+                background colour, ie the whitespace is larger then it should be.
+            </p>
+            <p class="my-4 text-base">
+                Second paragraph in second Content block primary background,
+                illustrating what happens when margins collapse in the same component.
+            </p>
+            <p class="mt-4 text-base">
+                Third paragraph in second Content block primary background,
+                illustrating what happens when margins collapse in the same component.
+            </p>
+        </div>
+        <div class="px-[32px] py-4 text-mineShaft bg-concrete dark:text-white dark:bg-mineShaft">
+            <h2 class="my-[unset] text-2xl">Content block secondary background</h2>
+        </div>
+        <div class="px-[32px] py-4 text-mineShaft bg-beige dark:text-white dark:bg-brownDerby">
+            <div>
+                <h2 class="my-[unset] text-2xl">
+                    Boxed content <em>Beige</em> background (changes to
+                    <em>Big stone</em> in dark mode)
+                </h2>
+            </div>
+        </div>
+        <div class="px-[32px] py-4 text-white bg-chathamsBlue">
+            <div>
+                <h2 class="my-[unset] text-2xl">
+                    Boxed content <em>Chathams Blue</em> background (same in light and
+                    dark mode)
+                </h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="px-[32px] py-4 text-white bg-emperor">
+            <p class="my-[unset] text-base">Footer 1</p>
+        </div>
+        <div class="px-[32px] py-4 text-white bg-tundora">
+            <p class="my-[unset] text-base">Footer 2</p>
+        </div>
+        <div class="px-[32px] py-4 text-white bg-mineShaft">
+            <p class="my-[unset] text-base">Footer 3</p>
+        </div>
+    </footer>
 </body>
 
 </html>

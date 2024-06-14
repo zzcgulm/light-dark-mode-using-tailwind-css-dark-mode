@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (scripting: none) {
+	#theme-toggle {
+		display: none;
+	}
+}
